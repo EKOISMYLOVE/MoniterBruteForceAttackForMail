@@ -21,7 +21,7 @@
 -------
 Python Version : 2.7.13 
 
-Postfix 需開啟驗證功能(預設為不開啟)。
+Postfix 需開啟驗證功能(SASL,預設為不開啟)。
 
 需下載並安裝scapy函式庫。
 
