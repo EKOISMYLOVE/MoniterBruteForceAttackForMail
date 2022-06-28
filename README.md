@@ -17,7 +17,7 @@ But modified through syslog and regular expressions. it should work.
 Environment:
 -------
 Python Version : 2.7.13  
-Postfix needs to enable the authentication function (the default is disable).  
+Postfix and Dovecot need to enable the SASL (Default : disable).  
 The scapy library needs to be downloaded and installed.
 
 How to Use:
