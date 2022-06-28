@@ -1,9 +1,9 @@
-# This script for postfix(SMTP) and Dovecot(POP3 IMAP) on Debian
+# This script is for postfix(SMTP) and Dovecot(POP3 IMAP) on Debian
 # Set "disable_plaintext_auth = no" in dovecot to Test.
-# Need set SASL.
-# You should create 'passlist.txt' and type in your whitelist IP address in same directory , Thanks.
-# Suggest : Type Server's IP in passlist.txt.
-# if you have many IP , Please change line and typing.
+# Need to turn on SASL.
+# You should create 'passlist.txt' and type in your whitelist IP address in same directory, Thanks.
+# Suggestion : Type Server's IP in passlist.txt.
+# If you have many IP , Please change line and typing.
 # passlist.txt Format :  
 # 127.0.0.1
 # 192.168.0.1
@@ -14,15 +14,15 @@ import time
 import socket
 from scapy.all import *
 
-# ---Global variable ---
+# ---Variable ---
 failtimes = 3
 recordIP = []
 recordUser = []
 recordBlockIP = []
 lock = threading.Lock()
-# --- Ban Time , it should bigger than checkTime , second---
+# --- Ban Time , it should bigger than checkTime , second ---
 blockTime = 600
-# --- Check iptables Interval Time , second---
+# --- Check iptables Interval Time , second ---
 checkTime = 30
 # --- Syslog path ---
 syslogLogPath = "/var/log/syslog"
